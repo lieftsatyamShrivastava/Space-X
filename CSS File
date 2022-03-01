@@ -1,0 +1,90 @@
+body{
+   /* color: black; */
+    background: 
+    url( '../images/sunrise.jpg');
+
+    min-height:100vh; 
+   background-size: cover;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+}
+header nav{
+
+    padding :20px 40px 20px 100px;
+    display : grid;
+
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      border-bottom: 1px solid gray ;
+      
+
+}
+
+header nav .nav-links a{
+
+    text-decoration: none;
+    color: cornsilk;
+
+    margin-right: 30px;
+    position: relative;
+
+
+}
+
+header nav .nav-links a::after{
+    content : '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+
+    background-color: white ;
+    transition:  width .3s ease-in-out;
+
+}
+
+
+header nav .nav-links a:hover::after{
+    width :70%;
+
+}
+
+
+header nav .nav-links a.active:after{
+    width: 70%;
+}
+
+  .left-section {
+ color: white;
+padding: 0 60  0 30px;
+  }
+
+  .hero .cta{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: cal(100vh-80px);
+  }
+
+  .hero .cta .right-section img{
+
+     height : 70vh;
+     transform: rotate(20deg);
+     animation: moveInspaces 15s ease-in-out infinite alternate;
+
+  }
+
+  @keyframes moveInspaces {
+
+    50%{
+
+        transform: translateY(100px) rotate(-90deg) scale(0.3);
+        
+
+  }
+
+  }
